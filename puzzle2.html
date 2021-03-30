@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Puzzle 2</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-color: #424040;">
 
 <!--Navbar-->
 <div>
     <div>
-        <div>
-            <h1 class="navbar-brand">Bootstrap Puzzle 2</h1>
+        <div class="container navbar navbar-expand-md bg-dark navbar-dark">
+            <div>
+                <h1 class="navbar-brand" href="#">Bootstrap Puzzle 2</h1>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                     <a class="navbar-toggler-icon"></a>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="puzzle1.html">Puzzle 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="puzzle2.html">Puzzle 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="puzzle3.html">Puzzle 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bonus.html">Bonus</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <a></a>
-            <ul>
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="puzzle1.html">Puzzle 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="puzzle2.html">Puzzle 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="puzzle3.html">Puzzle 3</a></li>
-                <li class="nav-item"><a class="nav-link" href="bonus.html">Bonus</a></li>
-            </ul>
-        </div>
-    </div>
 
 <!--Images-->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div  class="container" id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <a class="carousel-item active" href="img/img1.jpg" target="_blank">
                 <img class="d-block w-100" src="img/img1.jpg" alt="slides">
@@ -56,54 +58,54 @@
     </div>
 
 <!--Text blocks-->
-    <div>
-        <div>
-            <div>
+    <div  class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-2">
                 <img src="img/item1.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item1text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item1text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary" href="#item1text">Lees meer &hellip;</a></p>
             </div>
-            <div>
+            <div class="col-lg-6 pt-2">
                 <img src="img/item2.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item2text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item2text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary"href="#item2text">Lees meer &hellip;</a></p>
             </div>
-            <div>
+            <div class="col-lg-6 pt-2">
                 <img src="img/item3.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item3text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item3text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary"href="#item3text">Lees meer &hellip;</a></p>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-lg-6 pt-2">
                 <img src="img/item4.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item4text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item4text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary"href="#item4text">Lees meer &hellip;</a></p>
             </div>
-            <div>
+            <div class="col-lg-6 pt-2">
                 <img src="img/item5.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item5text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item5text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary"href="#item5text">Lees meer &hellip;</a></p>
             </div>
-            <div>
+            <div class="col-lg-6 pt-2">
                 <img src="img/item6.jpg">
-                <h2>Etiam hendrerit vel sem ac accumsan</h2>
+                <h2 class="p-3 mb-2 bg-primary text-white">Etiam hendrerit vel sem ac accumsan</h2>
                 <p id="item6text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc lectus, feugiat id ipsum sed, sollicitudin malesuada justo. Nam congue commodo quam, vitae gravida mi. Aliquam erat volutpat. Suspendisse semper, lectus eu accumsan feugiat, nunc nibh euismod turpis, ut suscipit massa nibh at eros. Vivamus vel orci sed libero accumsan egestas. </p>
-                <p><a href="#item6text">Lees meer &hellip;</a></p>
+                <p><a class="btn btn-primary"href="#item6text">Lees meer &hellip;</a></p>
             </div>
         </div>
     </div>
 
 <!--Credits-->
-    <div>
-        <div>
-            <span>Created with:</span>
+    <div class="container">
+        <div style="background-color: #424040;" class="float-right">
+            <span></span>
             <a href="https://getbootstrap.com/" target="_blank"><img src="img/logo-bootstrap.png"></a>
             <a href="https://fontawesome.com/" target="_blank"><img src="img/logo-fontawsome.png"></a>
             <a href="https://w3schools.com/" target="_blank"><img src="img/logo-w3schools.png"></a>
